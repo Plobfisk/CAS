@@ -30,6 +30,7 @@ std::tuple<std::string, number_t> CAS::calc(std::string eq) {
     
     Parser parser(tokens);
     auto ast = parser.parse();
+    //printAST(ast->lhs);
     //printAST(ast->rhs);
 
     number_t result = calculateExpr::eval(ast->rhs, m_varTable);

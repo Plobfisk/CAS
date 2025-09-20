@@ -137,4 +137,12 @@ number_t eval(std::string eq) {
     return eval(ast->rhs);
 }
 
+number_t solve(NodeEquals* expr) { // WIP
+    auto lhs = expr->lhs;
+    auto rhs = expr->rhs;
+
+    return 0;
+}
+
+
 }
